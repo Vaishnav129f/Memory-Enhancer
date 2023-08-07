@@ -94,3 +94,24 @@ body {
       height: 50px;
     }
   }
+  /* Add this CSS to style the "Start" button */
+#start-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #ec6212;
+    color: #FEF2BF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #start-button:hover {
+    background-color: #ff9233;
+  }
+  
+  #start-button:active {
+    background-color: #d65700;
+  }
+  
