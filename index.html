@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1 id="level-title">Press Any Key to Start</h1>
+  <h1 id="level-title">Press Start Key to Begin</h1>
   <p id="your-score">Your Score: 0</p>
   <p id="highscore">Highscore: 0</p>
   
@@ -17,41 +17,60 @@
     <div class="row">
 
       <div type="button" id="green" class="btn green">
-
+       1
 
       </div>
       <div type="button" id="orange" class="btn orange">
-
+        2
       </div>
-
+      
       <div type="button" id="red" class="btn red">
-
+        3
       </div>
     </div>
 
     <div class="row">
 
       <div type="button" id="yellow" class="btn yellow">
-
+4
       </div>
       <div type="button" id="blue" class="btn blue">
-
+5
       </div>
 
       <div type ="button" id = "purple" class="btn purple">
-
+6
       </div>
 
     </div>
 
   </div>
   <button id="start-button">Start</button>
+  <br>
+
+  <button id="rules-button">Rules</button>
+<div id="rules-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Simon Game Rules</h2>
+    <p>1. The game displays a sequence of button presses (colors or numbers) in a specific order.</p>
+    <p>2. The player must repeat the sequence by clicking the buttons in the same order.</p>
+    <p>3. After successfully repeating the sequence, the game adds another random button press to the end of the current sequence.</p>
+    <p>4. The player must then repeat the longer sequence again.</p>
+    <p>5. This pattern continues, with the sequence getting longer each time the player successfully repeats it.</p>
+    <p>6. If the player makes a mistake and clicks the wrong button or presses the buttons in the wrong order, the game ends.</p>
+    <p>7. The game displays a "Game Over" message along with the player's score (how many steps they successfully repeated).</p>
+    <p>8. The player can start a new game by clicking a "Start" button or pressing any key.</p>
+  </div>
+</div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="game.js" charset="utf-8"></script>
 
   <footer id="footer">
     <p>Made  with ❤ Vaishnav</p>
+
   </footer>
 </body>
 
