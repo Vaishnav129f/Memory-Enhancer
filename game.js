@@ -115,7 +115,7 @@ $(document).ready(function () {
   });
   
   function startGame() {
-    highscore = 0;
+    
     yourScore = 0;
     $("#your-score").text("Your Score: " + yourScore);
     $("#highscore").text("Highscore: " + highscore);
