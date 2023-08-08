@@ -98,6 +98,20 @@ $(document).ready(function () {
         startGame();
       }
     });
+    $("#rules-button").click(function () {
+      $("#rules-modal").css("display", "block");
+    });
+  
+    // Hide rules modal when close button or outside modal is clicked
+    $(".close").click(function () {
+      $("#rules-modal").css("display", "none");
+    });
+  
+    $(window).click(function (event) {
+      if (event.target == document.getElementById("rules-modal")) {
+        $("#rules-modal").css("display", "none");
+      }
+    });
   });
   
   function startGame() {
